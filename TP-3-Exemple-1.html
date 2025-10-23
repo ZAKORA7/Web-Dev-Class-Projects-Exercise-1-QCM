@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer src="TP-3-Exemple.js"></script>
+    <style>
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px auto 0 auto;
+            background-color: whitesmoke;
+        }
+
+        form {
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+            margin-top: 20px;
+            margin-bottom: 50px;
+        }
+
+        .btns {
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            font-size: 18px;
+            margin-left: 10px;
+            margin-top: 30px;
+        }
+
+        .btns:hover {
+            opacity: 0.8;
+        }
+
+        .btns:active {
+            opacity: 0.4;
+        }
+
+        .submit {
+            background-color: lightgreen;
+        }
+
+        .reset {
+            background-color: tomato;
+        }
+    </style>
+</head>
+<body>
+    <form> 
+        <h3>Q1: Choisir la capitale de chaque payes: </h3>
+
+        <p>Quelle est la capitale du Marroc?</p>  
+        <input type="radio" name="QI" value="Rabat"> Rabat
+        <br>
+        <input type="radio" name="QI" value="Casablanca"> Casablanca
+        <br>
+        <input type="radio" name="QI" value="Fes"> Fes
+        <br>
+
+
+        <p> Quelle est la capitale du Japon?</p>  
+        <input type="radio" name="QII" value="Tokyo"> Tokyo
+        <br>
+        <input type="radio" name="QII" value="Chibuya"> Chibuya
+        <br>
+        <input type="radio" name="QII" value="Hiroshima"> Hiroshima
+        <br>
+
+        <p> Quelle est la capitale du France</p>  
+        <input type="radio" name="QIII" value="Nice"> Nice
+        <br>
+        <input type="radio" name="QIII" value="Marseille"> Marseille
+        <br>
+        <input type="radio" name="QIII" value="Paris"> Paris
+        <br>
+
+        <p> Quelle est la capitale de l'allemagne</p>  
+        <input type="radio" name="QIV" value="Hambourg"> Hambourg
+        <br>
+        <input type="radio" name="QIV" value="Berlin"> Berlin
+        <br>
+        <input type="radio" name="QIV" value="Munich"> Munich
+        <br>
+
+        <h3>Q2: Cocher les reponces Correctes:</h3>
+
+        <p>Cocher les language de programation:</p>  
+        <input type="checkbox" name="QIV" value="Javascript"> Javascript
+        <br>
+        <input type="checkbox" name="QIV" value="HTMT">HTMT
+        <br>
+        <input type="checkbox" name="QIV" value="java">java
+        <br>
+        <input type="checkbox" name="QIV" value="Python">Python
+        <br>
+
+        <p>Cocher les code editeurs:</p>  
+        <input type="checkbox" name="QIV" value="Vs Code"> Vs Code
+        <br>
+        <input type="checkbox" name="QIV" value="Linked In">Linked In
+        <br>
+        <input type="checkbox" name="QIV" value="Microsoft Excel">Microsoft Excel
+        <br>
+        <input type="checkbox" name="QIV" value="Intelij">Intelij
+        <br>
+        
+        <button id="submit-btn" class="btns submit">Submit</button>
+        <input type="reset" class="btns reset">
+
+        <p id="result" ></p>
+    </form>
+</body>
+</html>
